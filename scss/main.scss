@@ -1,0 +1,151 @@
+@import url(./_fonts.scss);
+@import url(./_normalize.scss);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.hero {
+  padding-top: 109px;
+  padding-bottom: 67px;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  .hero-title {
+    padding-top: 81px;
+
+    h1 {
+      font-family: "Exo 2", sans-serif;
+      font-weight: 600;
+      font-size: 52px;
+      line-height: 65px;
+      color: #363738;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: #6b6b6c;
+      margin-bottom: 40px;
+    }
+
+    h4 {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 24px;
+      color: #363738;
+    }
+
+    .line {
+      width: 120px;
+      border: 3px solid #ffce50;
+    }
+  }
+
+  .hero-image {
+    max-width: 635px;
+    width: 100%;
+  }
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  box-shadow: 0px 4px 20px 0px #00000026;
+  padding: 40px 80px;
+  border-radius: 20px;
+  margin-bottom: 72px;
+  .card1 {
+    max-width: 345px;
+    width: 100%;
+    img {
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-family: "Exo 2", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      color: #363738;
+      margin-bottom: 16px;
+    }
+
+    p {
+      max-width: 225px;
+      width: 100%;
+      font-size: 16px;
+      line-height: 24px;
+      color: #6b6b6c;
+    }
+  }
+
+  .card2 {
+    @extend .card1;
+    padding-left: 64px;
+    border-left: 2px solid #d7d7dd;
+  }
+
+  .card3 {
+    @extend .card1;
+    padding-left: 64px;
+    border-left: 2px solid #d7d7dd;
+  }
+}
+
+// main
+.box {
+  display: flex;
+  gap: 140px;
+
+  .card {
+    display: flex;
+    gap: 40px;
+    padding: 0 66px;
+    padding-bottom: 62px;
+
+    .card-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #e9e9ec;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px;
+      margin-bottom: 20px;
+    }
+
+    h4 {
+      font-family: "Exo 2", sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 27px;
+      color: #363738;
+      margin-bottom: 16px;
+    }
+
+    p {
+      max-width: 291px;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
